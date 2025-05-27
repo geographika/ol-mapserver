@@ -5,8 +5,14 @@ import View from 'ol/View.js';
 import { getCenter } from 'ol/extent.js';
 import ImageLayer from 'ol/layer/Image.js';
 import ImageSource from 'ol/source/Image.js';
+import { addProjection, Projection } from 'ol/proj.js';
 import { createLoader as createCgiLoader } from 'ol/source/mapserver.js';
 import { createLoader as createWmsLoader } from 'ol/source/wms.js';
+
+// add a sample projection code not included by default in ol
+if (!ol.proj.get('EPSG:32633')) {
+    addProjection(new Projection({ code: 'EPSG:32633' }));
+}
 
 const mapserverUrl = 'https://demo.mapserver.org/cgi-bin/wms?';
 const bounds = [-90,-180,90,180];

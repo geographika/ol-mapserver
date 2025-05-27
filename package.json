@@ -1,6 +1,6 @@
 {
   "name": "ol-mapserver",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "start": "vite",
     "build": "vite build",
@@ -8,11 +8,11 @@
     "build-ol": "webpack --config webpack.config.js"
   },
   "devDependencies": {
-    "vite": "^6.0.9",
-    "webpack": "^5.97.1",
+    "vite": "^6.3.5",
+    "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
-    "ol": "10.4.0"
+    "ol": "10.5.0"
   }
 }

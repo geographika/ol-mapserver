@@ -18,7 +18,7 @@ To generate a build:
     npm run build
 
 This only uses the OpenLayers classes required by the application.
-Then deploy the contents of the `dist` directory to your server.  
+Then deploy the contents of the `dist` directory to your server.
 You can also run `npm run serve` to serve the results of the `dist` directory for preview.
 
 ## Custom OpenLayers Build
